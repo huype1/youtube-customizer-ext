@@ -5,6 +5,15 @@
   "manifest_version": 3,
   "action": {
     "default_popup": "index.html",
-    "default_icon": "assets/images/icon.png"
-  }
+    "default_icon": "assets/images/2.png"
+  },
+  "content_scripts": [
+    {
+      "js": ["content.js"],
+      "matches": [
+        "https://developer.chrome.com/docs/extensions/*",
+        "https://developer.chrome.com/docs/webstore/*"
+      ]
+    }
+  ]
 }
